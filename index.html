@@ -43,5 +43,16 @@
 </div>
 </div>
 </div>
+
+     <script>
+        var video = document.getElementById("myVideo");
+        video.onclick = function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        };
+    </script>
 </body>
 </html>
