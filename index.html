@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingöll</title>
+    <title>Bingöle</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -16,7 +16,7 @@
                 </div>   
                 <nav>
                     <ul>
-                        <li><a id="anasayfaLink" href="index.html">ANASAYFA</a></li>
+                        <li id="anasayfaLink"><a href="index.html">ANASAYFA</a></li>
                         <li><a href="https://tr.wikipedia.org/wiki/Bing%C3%B6l#Etimoloji" target="_blank">HAKKINDA</a></li>
                         <li><a href="https://tr.wikipedia.org/wiki/Bing%C3%B6l#N%C3%BCfus" target="_blank">KEŞFET</a></li>
                         <li><a href="https://tr.wikipedia.org/wiki/Bing%C3%B6l#Kaynak%C3%A7a" target="_blank">İLETİŞİM</a></li>
@@ -42,11 +42,10 @@
             </div>
         </div>
     </div>
-
     <script>
-        // Sayfa yüklendiğinde tarayıcıyı "ANASAYFA" bağlantısına yönlendir
+        // Sayfa yüklendiğinde "ANASAYFA" bağlantısına otomatik olarak tıkla
         window.onload = function() {
-            window.location.href = document.getElementById("anasayfaLink").href;
+            document.getElementById("anasayfaLink").click();
         };
     </script>
 </body>
