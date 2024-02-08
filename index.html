@@ -16,7 +16,7 @@
                 </div>   
                 <nav>
                     <ul>
-                        <li id="anasayfaLink"><a href="index.html">ANASAYFA</a></li>
+                        <li><a id="anasayfaLink" href="index.html">ANASAYFA</a></li>
                         <li><a href="https://tr.wikipedia.org/wiki/Bing%C3%B6l#Etimoloji" target="_blank">HAKKINDA</a></li>
                         <li><a href="https://tr.wikipedia.org/wiki/Bing%C3%B6l#N%C3%BCfus" target="_blank">KEŞFET</a></li>
                         <li><a href="https://tr.wikipedia.org/wiki/Bing%C3%B6l#Kaynak%C3%A7a" target="_blank">İLETİŞİM</a></li>
@@ -42,10 +42,11 @@
             </div>
         </div>
     </div>
+
     <script>
-        
+        // Sayfa yüklendiğinde tarayıcıyı "ANASAYFA" bağlantısına yönlendir
         window.onload = function() {
-            document.getElementById("anasayfaLink").click();
+            window.location.href = document.getElementById("anasayfaLink").href;
         };
     </script>
 </body>
